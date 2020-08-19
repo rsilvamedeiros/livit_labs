@@ -1,0 +1,23 @@
+{
+  "name": "bebas-neue-fontface",
+  "main": [
+    "./bebas-neue.css",
+    "./fonts/*"
+  ],
+  "homepage": "https://github.com/tiraeth/bebas-neue",
+  "authors": [
+    "Dharma Type <info@dharmatype.com>"
+  ],
+  "description": "The Bebas Neue fontface",
+  "keywords": [
+    "font"
+  ],
+  "license": "SIL Open Font License 1.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
