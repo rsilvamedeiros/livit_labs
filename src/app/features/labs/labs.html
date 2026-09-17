@@ -1,0 +1,16 @@
+<div class="labs-page">
+  <section class="hero">
+    <div class="hero-copy"><span class="kicker">CIÊNCIA, ROTINA E BEM-ESTAR</span><h1>Seu bem-estar<br>começa por <em>você.</em></h1><p>Fórmulas desenvolvidas para acompanhar uma vida mais leve, ativa e equilibrada — com transparência em cada escolha.</p><div class="hero-actions"><a class="button primary" href="#formula">Conheça a fórmula <span>↓</span></a><a class="button ghost" href="#historia">Nossa história</a></div><div class="trust"><b>57+</b><span>países<br>alcançados</span><i></i><b>100%</b><span>ingredientes<br>selecionados</span></div></div>
+    <div class="hero-visual"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="product-glow"></div><img src="assets/img/produtos_topo.jpg" alt="Linha de produtos Livit Labs"><span class="seal">LIVIT<br><b>LABS</b><small>DESDE 2018</small></span></div>
+  </section>
+
+  <section class="manifesto" id="historia"><span class="section-number">01</span><div><p class="kicker">NOSSO PROPÓSITO</p><h2>Ciência que cabe<br>na <em>vida real.</em></h2></div><div class="manifesto-copy"><p>Acreditamos que cuidar de si não precisa ser complicado. Criamos produtos que unem pesquisa, ingredientes de qualidade e uma experiência simples.</p><p>Sem promessas mágicas. Apenas escolhas conscientes para construir uma rotina que faz sentido para você.</p></div></section>
+
+  <section class="formula" id="formula"><div class="formula-heading"><div><p class="kicker">O QUE TEM DENTRO IMPORTA</p><h2>Da natureza para<br>a sua <em>rotina.</em></h2></div><p>Uma combinação pensada para fazer parte dos seus melhores hábitos.</p></div><div class="ingredient-grid">@for (item of ingredients; track item.name; let i = $index) { <article><span class="index">0{{ i + 1 }}</span><div class="ingredient-image"><img [src]="item.image" [alt]="item.name" loading="lazy"></div><h3>{{ item.name }}</h3><p>{{ item.benefit }}</p></article> }</div></section>
+
+  <section class="quality"><div class="quality-image"><img src="assets/img/selos.png" alt="Selos de qualidade Livit Labs" loading="lazy"></div><div class="quality-copy"><p class="kicker">COMPROMISSO EM CADA DETALHE</p><h2>Qualidade que você<br>pode <em>confiar.</em></h2><div class="quality-list"><div><span>✓</span><p><b>Seleção criteriosa</b><small>Matérias-primas escolhidas com rigor.</small></p></div><div><span>✓</span><p><b>Transparência</b><small>Informações claras, do rótulo ao consumo.</small></p></div><div><span>✓</span><p><b>Produção responsável</b><small>Processos orientados por qualidade e segurança.</small></p></div></div></div></section>
+
+  <section class="ecosystem"><div><p class="kicker">MAIS QUE BEM-ESTAR</p><h2>Conheça o ecossistema<br><em>Livit.</em></h2></div><div class="invest-card"><span class="invest-badge">NOVO</span><p>LIVIT <b>INVEST</b></p><h3>Suas escolhas financeiras também fazem parte do seu bem-estar.</h3><a routerLink="/invest">Explorar a plataforma <span>↗</span></a></div></section>
+
+  <section class="cta"><p class="kicker">COMECE PELO QUE IMPORTA</p><h2>Uma escolha melhor<br>pode mudar o seu <em>dia.</em></h2><a class="button primary" href="#formula">Descubra a Livit Labs</a></section>
+</div>

@@ -1,12 +1,13 @@
 # Livit Invest
 
-Plataforma demonstrativa de investimentos construída em Angular 21. O projeto transforma a antiga landing page da Livit Labs em um produto financeiro responsivo, acessível e orientado a domínio.
+Ecossistema digital construído em Angular 21. A experiência principal moderniza a marca original Livit Labs, enquanto o módulo Livit Invest demonstra um produto financeiro responsivo, acessível e orientado a domínio.
 
 ## O que demonstra
 
 - Angular standalone, Signals, controle de fluxo moderno e lazy loading
 - Estado reativo desacoplado da fonte de dados por `MarketRepository`
-- Dashboard de patrimônio, carteira, radar de ativos e gráficos SVG leves
+- Landing page Livit Labs fiel à identidade visual roxa original
+- Dashboard Livit Invest em `/invest`, com patrimônio, carteira e gráficos SVG leves
 - Boleta com Reactive Forms, validação e feedback assíncrono
 - Contratos TypeScript imutáveis prontos para uma API REST real
 - Change detection `OnPush`, budgets de bundle e layout responsivo
@@ -39,7 +40,8 @@ src/app/
 │   ├── models/     # contratos do domínio
 │   └── state/      # estado e regras da carteira
 ├── features/
-│   └── dashboard/  # feature carregada sob demanda
+│   ├── labs/       # experiência principal da marca
+│   └── dashboard/  # módulo Livit Invest sob demanda
 └── shared/          # componentes visuais reutilizáveis
 ```
 

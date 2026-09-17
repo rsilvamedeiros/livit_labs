@@ -20,6 +20,6 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.brand')?.textContent).toContain('Livit Invest');
+    expect(compiled.querySelector('.brand img')?.getAttribute('alt')).toBe('Livit Labs');
   });
 });
