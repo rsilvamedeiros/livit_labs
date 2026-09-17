@@ -4,5 +4,6 @@ export const routes: Routes = [
   { path: 'invest', loadComponent: () => import('./features/dashboard/dashboard').then(m => m.Dashboard) },
   { path: 'invest/mercado', loadComponent: () => import('./features/dashboard/dashboard').then(m => m.Dashboard) },
   { path: 'invest/ordens', loadComponent: () => import('./features/dashboard/dashboard').then(m => m.Dashboard) },
+  { path: 'flow', loadComponent: () => import('./features/flow/flow').then(m => m.Flow) },
   { path: '**', redirectTo: '' },
 ];

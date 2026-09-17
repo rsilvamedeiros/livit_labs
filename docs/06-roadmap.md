@@ -40,13 +40,13 @@ O roadmap organiza resultados, não datas rígidas. Cada fase deve ser validada 
 
 **Objetivo:** validar criação e manutenção de hábitos.
 
-- Onboarding leve.
-- Visão “Hoje”.
-- CRUD de hábitos e metas.
-- Check-in e histórico semanal.
-- Persistência local por repository.
-- PWA básica e funcionamento offline.
-- Testes E2E da jornada principal.
+- [ ] Onboarding leve.
+- [x] Visão “Hoje”.
+- [ ] CRUD completo de hábitos e metas.
+- [x] Check-in interativo e histórico semanal demonstrativo.
+- [ ] Persistência local por repository.
+- [ ] PWA básica e funcionamento offline.
+- [ ] Testes E2E da jornada principal.
 
 **Critério de saída:** usuário cria um hábito, registra progresso por uma semana e entende sua consistência.
 
@@ -89,4 +89,3 @@ O roadmap organiza resultados, não datas rígidas. Cada fase deve ser validada 
 - Integrações com calendário e dispositivos.
 - Backend cloud e infraestrutura como código.
 - Experimentos controlados com métricas éticas.
-

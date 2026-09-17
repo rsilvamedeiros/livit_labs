@@ -1,12 +1,20 @@
-<div class="app-shell">
+<div class="app-shell" [class]="'theme-' + product()">
   <header class="topbar">
-    <a class="brand" routerLink="/" aria-label="Livit Labs - início"><img src="assets/img/logo_branco.png" alt="Livit Labs"></a>
-    <nav aria-label="Navegação principal">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Livit Labs</a>
-      <a routerLink="/invest" routerLinkActive="active">Livit Invest</a>
+    <a class="brand" routerLink="/" [attr.aria-label]="'Livit ' + productName() + ' - início'">
+      @if (product() === 'labs') { <img src="assets/img/logo_branco.png" alt="Livit Labs"> }
+      @else { <span class="brand-symbol">L</span><span>Livit <b>{{ productName() }}</b></span> }
+    </a>
+    <nav aria-label="Produtos Livit">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Labs</a>
+      <a routerLink="/invest" routerLinkActive="active">Invest</a>
+      <a routerLink="/flow" routerLinkActive="active">Flow</a>
     </nav>
-    <a class="invest-link" routerLink="/invest"><span aria-hidden="true">↗</span> Acessar Invest</a>
+    <a class="ecosystem-link" routerLink="/">Ecossistema Livit <span aria-hidden="true">↗</span></a>
   </header>
   <main><router-outlet /></main>
-  <footer><img src="assets/img/logo_branco.png" alt="Livit Labs"><span>Bem-estar e tecnologia para escolhas mais inteligentes.</span><small>© 2026 Livit Labs. Projeto demonstrativo.</small></footer>
+  <footer>
+    <div class="footer-brand">Livit <b>{{ productName() }}</b></div>
+    <span>{{ tagline() }}</span>
+    <small>© 2026 Livit. Projeto demonstrativo.</small>
+  </footer>
 </div>

@@ -10,6 +10,7 @@ Ecossistema digital construído em Angular 21. A experiência principal moderniz
 - Estado reativo desacoplado da fonte de dados por `MarketRepository`
 - Landing page Livit Labs fiel à identidade visual roxa original
 - Dashboard Livit Invest em `/invest`, com patrimônio, carteira e gráficos SVG leves
+- Dashboard Livit Flow em `/flow`, com hábitos, metas e progresso semanal
 - Boleta com Reactive Forms, validação e feedback assíncrono
 - Contratos TypeScript imutáveis prontos para uma API REST real
 - Change detection `OnPush`, budgets de bundle e layout responsivo

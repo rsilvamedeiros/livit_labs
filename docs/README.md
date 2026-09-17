@@ -28,5 +28,4 @@ Este diretório é a fonte de verdade para as decisões de produto, marca e enge
 | Livit institucional | `/` | Planejada |
 | Livit Labs | `/labs` | Implementada atualmente em `/`; migração planejada |
 | Livit Invest | `/invest` | MVP demonstrativo implementado |
-| Livit Flow | `/flow` | Descoberta e definição |
-
+| Livit Flow | `/flow` | MVP visual e hábitos interativos implementados |
