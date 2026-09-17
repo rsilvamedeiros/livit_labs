@@ -1,4 +1,6 @@
-# Livit Invest
+# Ecossistema Livit
+
+> A visão completa de produto, marca e engenharia está em [docs/README.md](./docs/README.md).
 
 Ecossistema digital construído em Angular 21. A experiência principal moderniza a marca original Livit Labs, enquanto o módulo Livit Invest demonstra um produto financeiro responsivo, acessível e orientado a domínio.
 
