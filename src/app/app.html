@@ -2,8 +2,7 @@
   <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
   <header class="topbar">
     <a class="brand" routerLink="/" [attr.aria-label]="'Livit ' + productName() + ' - início'">
-      @if (product() === 'labs') { <img src="assets/img/logo_branco.png" alt="Livit Labs"> }
-      @else { <span class="brand-symbol">L</span><span>Livit @if (productName()) { <b>{{ productName() }}</b> }</span> }
+      <img class="brand-lockup" [src]="brandAsset()" [alt]="productName() ? 'Livit ' + productName() : 'Livit'">
     </a>
     <nav aria-label="Produtos Livit">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
