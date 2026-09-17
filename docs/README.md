@@ -25,7 +25,7 @@ Este diretório é a fonte de verdade para as decisões de produto, marca e enge
 
 | Experiência | Rota desejada | Situação |
 |---|---|---|
-| Livit institucional | `/` | Planejada |
-| Livit Labs | `/labs` | Implementada atualmente em `/`; migração planejada |
+| Livit institucional | `/` | Landing page implementada |
+| Livit Labs | `/labs` | Experiência visual implementada |
 | Livit Invest | `/invest` | MVP demonstrativo implementado |
 | Livit Flow | `/flow` | MVP visual e hábitos interativos implementados |

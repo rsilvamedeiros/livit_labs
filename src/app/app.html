@@ -2,18 +2,19 @@
   <header class="topbar">
     <a class="brand" routerLink="/" [attr.aria-label]="'Livit ' + productName() + ' - início'">
       @if (product() === 'labs') { <img src="assets/img/logo_branco.png" alt="Livit Labs"> }
-      @else { <span class="brand-symbol">L</span><span>Livit <b>{{ productName() }}</b></span> }
+      @else { <span class="brand-symbol">L</span><span>Livit @if (productName()) { <b>{{ productName() }}</b> }</span> }
     </a>
     <nav aria-label="Produtos Livit">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Labs</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a routerLink="/labs" routerLinkActive="active">Labs</a>
       <a routerLink="/invest" routerLinkActive="active">Invest</a>
       <a routerLink="/flow" routerLinkActive="active">Flow</a>
     </nav>
-    <a class="ecosystem-link" routerLink="/">Ecossistema Livit <span aria-hidden="true">↗</span></a>
+    <a class="ecosystem-link" [routerLink]="product() === 'institutional' ? '/flow' : '/'">{{ product() === 'institutional' ? 'Começar agora' : 'Ecossistema Livit' }} <span aria-hidden="true">↗</span></a>
   </header>
   <main><router-outlet /></main>
   <footer>
-    <div class="footer-brand">Livit <b>{{ productName() }}</b></div>
+    <div class="footer-brand">Livit @if (productName()) { <b>{{ productName() }}</b> }</div>
     <span>{{ tagline() }}</span>
     <small>© 2026 Livit. Projeto demonstrativo.</small>
   </footer>

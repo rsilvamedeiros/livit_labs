@@ -17,12 +17,12 @@ O roadmap organiza resultados, não datas rígidas. Cada fase deve ser validada 
 
 **Objetivo:** explicar e divulgar o ecossistema.
 
-- Landing pública em `/`.
-- Seções para corpo, patrimônio e rotina.
+- [x] Landing pública em `/`.
+- [x] Seções para corpo, patrimônio e rotina.
 - Páginas `/sobre`, `/privacidade` e `/termos`.
 - Metadados sociais, SEO técnico e dados estruturados.
 - Analytics com consentimento e eventos documentados.
-- Migração da experiência Labs para `/labs`.
+- [x] Migração da experiência Labs para `/labs`.
 
 **Critério de saída:** uma pessoa que não conhece a Livit compreende os três produtos e encontra o próximo passo em poucos segundos.
 

@@ -7,7 +7,7 @@ import { filter, map } from 'rxjs';
 export class App {
   private readonly router = inject(Router);
   private readonly url = toSignal(this.router.events.pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd), map(event => event.urlAfterRedirects)), { initialValue: this.router.url });
-  readonly product = computed<'labs' | 'invest' | 'flow'>(() => this.url().startsWith('/invest') ? 'invest' : this.url().startsWith('/flow') ? 'flow' : 'labs');
-  readonly productName = computed(() => ({ labs: 'Labs', invest: 'Invest', flow: 'Flow' })[this.product()]);
-  readonly tagline = computed(() => ({ labs: 'Bem-estar e tecnologia para escolhas mais inteligentes.', invest: 'Clareza para cuidar do seu patrimônio.', flow: 'Pequenos passos. Uma rotina que evolui com você.' })[this.product()]);
+  readonly product = computed<'institutional' | 'labs' | 'invest' | 'flow'>(() => this.url().startsWith('/labs') ? 'labs' : this.url().startsWith('/invest') ? 'invest' : this.url().startsWith('/flow') ? 'flow' : 'institutional');
+  readonly productName = computed(() => ({ institutional: '', labs: 'Labs', invest: 'Invest', flow: 'Flow' })[this.product()]);
+  readonly tagline = computed(() => ({ institutional: 'Viva melhor, em todas as áreas.', labs: 'Bem-estar e tecnologia para escolhas mais inteligentes.', invest: 'Clareza para cuidar do seu patrimônio.', flow: 'Pequenos passos. Uma rotina que evolui com você.' })[this.product()]);
 }
