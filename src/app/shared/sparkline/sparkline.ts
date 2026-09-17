@@ -1,0 +1,4 @@
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+
+@Component({ selector: 'app-sparkline', template: `<svg viewBox="0 0 120 42" preserveAspectRatio="none" role="img" [attr.aria-label]="label()"><polyline [attr.points]="points()" /></svg>`, styles: [`:host{display:block;width:100%;height:42px}svg{width:100%;height:100%;overflow:visible}polyline{fill:none;stroke:currentColor;stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}`], changeDetection: ChangeDetectionStrategy.OnPush })
+export class Sparkline { readonly data = input.required<readonly number[]>(); readonly label = input('Evolução do ativo'); readonly points = computed(() => { const values = this.data(); const min = Math.min(...values); const range = Math.max(...values) - min || 1; return values.map((value, index) => `${index * (120 / (values.length - 1))},${40 - ((value - min) / range) * 36}`).join(' '); }); }

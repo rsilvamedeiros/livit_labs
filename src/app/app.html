@@ -1,0 +1,17 @@
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" routerLink="/" aria-label="Livit Invest - início"><span class="brand-mark" aria-hidden="true">L</span><span>Livit <strong>Invest</strong></span></a>
+    <nav aria-label="Navegação principal">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Visão geral</a>
+      <a routerLink="/mercado" routerLinkActive="active">Mercado</a>
+      <a routerLink="/ordens" routerLinkActive="active">Ordens</a>
+    </nav>
+    <div class="topbar-actions">
+      <span class="market-status"><i></i> B3 aberta</span>
+      <button class="icon-button" type="button" aria-label="Notificações"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg></button>
+      <button class="profile" type="button" aria-label="Abrir perfil de Renan"><span>RM</span><span class="profile-copy">Renan<small>Investidor</small></span></button>
+    </div>
+  </header>
+  <main><router-outlet /></main>
+  <footer><span>Livit Invest</span><span>Ambiente demonstrativo • Cotações simuladas</span></footer>
+</div>

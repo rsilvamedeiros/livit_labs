@@ -1,0 +1,20 @@
+:host { display: block; min-height: 100vh; }
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { height: 72px; padding: 0 clamp(20px, 4vw, 64px); display: flex; align-items: center; gap: 48px; background: rgba(10, 17, 15, .94); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px); }
+.brand { color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 11px; font-size: 18px; letter-spacing: -.4px; white-space: nowrap; }
+.brand strong { color: var(--lime); font-weight: 650; }
+.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; color: #07100d; font-weight: 850; background: var(--lime); border-radius: 10px 4px 10px 4px; transform: skew(-5deg); }
+nav { display: flex; align-self: stretch; gap: 30px; }
+nav a { color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 560; display: grid; place-items: center; position: relative; }
+nav a:hover, nav a.active { color: var(--text); }
+nav a.active::after { content: ''; height: 2px; left: 0; right: 0; bottom: 0; position: absolute; background: var(--lime); }
+.topbar-actions { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+.market-status { color: #9bd9b4; background: #10291e; border: 1px solid #1a4430; border-radius: 999px; padding: 7px 11px; font-size: 11px; text-transform: uppercase; letter-spacing: .6px; }
+.market-status i { width: 6px; height: 6px; margin-right: 5px; display: inline-block; border-radius: 50%; background: #46df8a; box-shadow: 0 0 8px #46df8a; }
+.icon-button { border: 0; background: transparent; color: var(--muted); padding: 6px; }
+.icon-button svg { width: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.profile { border: 0; background: transparent; color: var(--text); display: flex; align-items: center; gap: 9px; text-align: left; }
+.profile > span:first-child { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: #293b35; color: #c9f47a; font-size: 11px; }
+.profile-copy { font-size: 12px; display: grid; gap: 2px; }.profile-copy small { color: var(--muted); font-size: 10px; }
+main { flex: 1; } footer { display: flex; justify-content: space-between; padding: 24px clamp(20px, 4vw, 64px); color: #62706b; border-top: 1px solid var(--border); font-size: 11px; }
+@media (max-width: 800px) { .topbar { gap: 20px; } nav { display: none; } .market-status, .profile-copy { display: none; } footer { flex-direction: column; gap: 6px; } }
