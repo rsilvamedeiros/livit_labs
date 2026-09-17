@@ -1,4 +1,5 @@
 <div class="app-shell" [class]="'theme-' + product()">
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
   <header class="topbar">
     <a class="brand" routerLink="/" [attr.aria-label]="'Livit ' + productName() + ' - início'">
       @if (product() === 'labs') { <img src="assets/img/logo_branco.png" alt="Livit Labs"> }
@@ -12,7 +13,7 @@
     </nav>
     <a class="ecosystem-link" [routerLink]="product() === 'institutional' ? '/flow' : '/'">{{ product() === 'institutional' ? 'Começar agora' : 'Ecossistema Livit' }} <span aria-hidden="true">↗</span></a>
   </header>
-  <main><router-outlet /></main>
+  <main id="main-content" tabindex="-1"><router-outlet /></main>
   <footer>
     <div class="footer-brand">Livit @if (productName()) { <b>{{ productName() }}</b> }</div>
     <span>{{ tagline() }}</span>
