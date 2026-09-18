@@ -22,4 +22,11 @@ describe('Institutional', () => {
     component.subscribe();
     expect(component.subscribed()).toBe(true);
   });
+
+  it('keeps decision subtitles at a readable size', () => {
+    const fixture = TestBed.createComponent(Institutional);
+    fixture.detectChanges();
+    const subtitle = fixture.nativeElement.querySelector('.path-tabs button small') as HTMLElement;
+    expect(Number.parseFloat(getComputedStyle(subtitle).fontSize)).toBeGreaterThanOrEqual(12);
+  });
 });

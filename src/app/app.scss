@@ -3,3 +3,6 @@
 .skip-link{position:fixed;left:16px;top:-60px;z-index:100;background:#fff;color:#21152a;padding:12px 16px;border-radius:4px;font-size:11px;font-weight:800}.skip-link:focus{top:12px}
 .brand-symbol{width:39px;height:39px;display:block;overflow:hidden;position:relative;flex:0 0 39px;background:transparent;border-radius:0}.brand-symbol img{position:absolute!important;left:0;top:2px;width:auto!important;height:35px!important;max-height:none!important;max-width:none!important;object-fit:initial!important}
 .brand>img.brand-lockup{width:auto;height:37px;max-width:205px;max-height:37px;object-fit:contain;object-position:left center}
+.topbar nav a{font-size:13px}.ecosystem-link{font-size:11px}footer{font-size:12px}footer small{font-size:10px;line-height:1.5}
+.ecosystem-link{font-size:12px}footer,footer small{font-size:12px;line-height:1.6}
+.ecosystem-link{min-height:44px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;letter-spacing:.1px;box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 18%,transparent);transition:transform .2s,box-shadow .2s}.ecosystem-link:hover{transform:translateY(-1px);box-shadow:0 11px 28px color-mix(in srgb,var(--accent) 25%,transparent)}
