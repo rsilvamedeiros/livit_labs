@@ -3,8 +3,9 @@ import { CurrencyPipe, DecimalPipe, PercentPipe } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { PortfolioStore } from '../../core/state/portfolio.store';
 import { Sparkline } from '../../shared/sparkline/sparkline';
+import { LucideBookOpen, LucideChartPie, LucideLandmark, LucideReceiptText } from '@lucide/angular';
 
-@Component({ selector: 'app-dashboard', imports: [CurrencyPipe, DecimalPipe, PercentPipe, ReactiveFormsModule, Sparkline], templateUrl: './dashboard.html', styleUrl: './dashboard.scss', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({ selector: 'app-dashboard', imports: [CurrencyPipe, DecimalPipe, PercentPipe, ReactiveFormsModule, Sparkline, LucideChartPie, LucideReceiptText, LucideBookOpen, LucideLandmark], templateUrl: './dashboard.html', styleUrl: './dashboard.scss', changeDetection: ChangeDetectionStrategy.OnPush })
 export class Dashboard implements OnInit {
   readonly store = inject(PortfolioStore); readonly activeRange = signal('1M'); readonly selectedTicker = signal('PETR4');
   readonly orderForm = new FormGroup({ side: new FormControl<'buy' | 'sell'>('buy', { nonNullable: true }), quantity: new FormControl(100, { nonNullable: true, validators: [Validators.required, Validators.min(1)] }), price: new FormControl(39.48, { nonNullable: true, validators: [Validators.required, Validators.min(.01)] }) });

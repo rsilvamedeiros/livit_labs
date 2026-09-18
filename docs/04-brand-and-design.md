@@ -35,10 +35,13 @@ Evitar: “Lucro garantido com um clique.”
 - Tipografia de interface: Manrope ou equivalente sem serifa.
 - Tipografia editorial: Georgia como fallback até definição de fonte licenciada.
 - Tipografia de dados: DM Mono.
+- Iconografia de interface: Lucide via `@lucide/angular`, com traço consistente e importação individual por componente.
 - Espaçamento baseado em múltiplos de 4 px.
 - Componentes com foco visível e área interativa mínima de 44 × 44 px.
 - Movimento deve informar mudança de estado e respeitar `prefers-reduced-motion`.
 - Gráficos nunca dependem apenas de cor; devem incluir rótulos, sinais ou padrões.
+
+Símbolos Unicode podem aparecer em conteúdo editorial, mas ações, navegação e conceitos funcionais devem preferir ícones Lucide para manter consistência visual e acessibilidade.
 
 ## Tokens pretendidos
 
@@ -62,4 +65,3 @@ Os tokens devem substituir valores hexadecimais locais conforme o design system 
 - HTML semântico antes de ARIA.
 - Estados de carregamento e mensagens anunciados por leitores de tela.
 - Conteúdo compreensível sem animações ou imagens.
-

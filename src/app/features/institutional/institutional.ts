@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { LucideAccessibility, LucideBrainCircuit, LucideShieldCheck, LucideSparkles } from '@lucide/angular';
 
-@Component({ selector: 'app-institutional', imports: [RouterLink, ReactiveFormsModule], templateUrl: './institutional.html', styleUrl: './institutional.scss', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({ selector: 'app-institutional', imports: [RouterLink, ReactiveFormsModule, LucideShieldCheck, LucideAccessibility, LucideBrainCircuit, LucideSparkles], templateUrl: './institutional.html', styleUrl: './institutional.scss', changeDetection: ChangeDetectionStrategy.OnPush })
 export class Institutional {
   readonly activePath = signal<'labs' | 'invest' | 'flow'>('flow');
   readonly email = new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] });

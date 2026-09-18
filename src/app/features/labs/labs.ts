@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LucideFlaskConical, LucideLeaf, LucidePackageCheck, LucideShieldCheck } from '@lucide/angular';
 
 interface Ingredient { readonly name: string; readonly benefit: string; readonly image: string; }
 
-@Component({ selector: 'app-labs', imports: [RouterLink], templateUrl: './labs.html', styleUrl: './labs.scss', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({ selector: 'app-labs', imports: [RouterLink, LucideLeaf, LucideFlaskConical, LucideShieldCheck, LucidePackageCheck], templateUrl: './labs.html', styleUrl: './labs.scss', changeDetection: ChangeDetectionStrategy.OnPush })
 export class Labs {
   readonly ingredients: readonly Ingredient[] = [
     { name: 'Chá verde', benefit: 'Energia e disposição para a rotina', image: 'assets/img/vitaminas-215x215.jpg' },

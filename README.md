@@ -16,6 +16,7 @@ Ecossistema digital construído em Angular 21. A experiência principal moderniz
 - Contratos TypeScript imutáveis prontos para uma API REST real
 - Change detection `OnPush`, budgets de bundle e layout responsivo
 - Testes unitários com Vitest e boas práticas de acessibilidade
+- Iconografia profissional e tree-shakable com `@lucide/angular`
 
 ## Executar
 

@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { LucideBrain, LucideCalendarDays, LucideDumbbell, LucideMoon, LucideSunrise } from '@lucide/angular';
 
 interface Habit { readonly id: number; readonly title: string; readonly category: string; readonly icon: string; readonly time: string; readonly streak: number; readonly done: boolean; readonly color: string; }
 interface Goal { readonly title: string; readonly category: string; readonly progress: number; readonly target: string; readonly color: string; }
 
-@Component({ selector: 'app-flow', templateUrl: './flow.html', styleUrl: './flow.scss', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({ selector: 'app-flow', imports: [LucideCalendarDays, LucideSunrise, LucideMoon, LucideDumbbell, LucideBrain], templateUrl: './flow.html', styleUrl: './flow.scss', changeDetection: ChangeDetectionStrategy.OnPush })
 export class Flow {
   readonly habits = signal<readonly Habit[]>([
     { id: 1, title: 'Começar o dia com água', category: 'Bem-estar', icon: '◌', time: '08:00', streak: 12, done: true, color: '#6d6af4' },
